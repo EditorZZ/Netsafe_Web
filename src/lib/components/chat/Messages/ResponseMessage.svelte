@@ -1033,7 +1033,7 @@
 								</Tooltip>
 
 								{#if $user?.role === 'admin' || ($user?.permissions?.chat?.tts ?? true)}
-									<Tooltip content={$i18n.t('Read Aloud')} placement="bottom">
+									<!-- <Tooltip content={$i18n.t('Read Aloud')} placement="bottom">
 										<button
 											aria-label={$i18n.t('Read Aloud')}
 											id="speak-button-{message.id}"
@@ -1113,7 +1113,7 @@
 												</svg>
 											{/if}
 										</button>
-									</Tooltip>
+									</Tooltip> -->
 								{/if}
 
 								{#if $config?.features.enable_image_generation && ($user?.role === 'admin' || $user?.permissions?.features?.image_generation) && !readOnly}
